@@ -16,6 +16,9 @@ public class Punto {
     private int y;
     Scanner scan= new Scanner(System.in);
 
+    public Punto() {
+    }
+
     public Punto(int x1, int y1) {
         this.x=x1;
         this.y=y1;

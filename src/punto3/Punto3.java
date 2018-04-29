@@ -12,9 +12,7 @@ import java.util.Scanner;
  * @author Windows10
  */
 public class Punto3 {
-    int a;
-    int b;
-    int c;
+    int[] arr = new int[3];
     
     
     
@@ -22,10 +20,10 @@ public class Punto3 {
     public void verificar(){
         Scanner scan=new Scanner(System.in);
         System.out.println("Ingrese los lados del triangulo");
-        a=scan.nextInt();
-        b=scan.nextInt();
-        c=scan.nextInt();
-        if (a+b>c && b+c>a && a+c>b){
+        arr[0]=scan.nextInt();
+        arr[1]=scan.nextInt();
+        arr[2]=scan.nextInt();
+        if (arr[0]+arr[1]>arr[2] && arr[1]+arr[2]>arr[0] && arr[0]+arr[2]>arr[1]){
             armar();
         }
         else
@@ -33,6 +31,6 @@ public class Punto3 {
     }
 
     public void armar(){
-        System.out.println("El perimeto es " + (a+b+c));
+        System.out.println("El perimeto es " + (arr[0]+arr[1]+arr[2]));
 }
 }

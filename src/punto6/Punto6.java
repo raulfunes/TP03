@@ -7,7 +7,6 @@ package punto6;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-import punto2.Rectangulo;
 /**
  *
  * @author Windows10
